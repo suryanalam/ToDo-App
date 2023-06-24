@@ -2,7 +2,20 @@ import './Todo.css';
 import React, { useState } from 'react';
 
 const Todo = () => {
-    const [items, setItems] = useState([]);
+    const [items, setItems] = useState([
+        {
+            id: 1,
+            Task: 'Task 1',
+        },
+        {
+            id: 1,
+            Task: 'Task 2',
+        },
+        {
+            id: 1,
+            Task: 'Task 3',
+        }
+    ]);
     const [Task, setTask] = useState('');
     const [editMode, setEditMode] = useState(false);
     const [editItemId, setEditItemId] = useState(null);
